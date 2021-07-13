@@ -1,0 +1,136 @@
+#main{
+    background-color: #ff359a;
+  }
+  
+  #layout {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "header"
+        "words"
+        "content"
+        "footer";
+  }
+  
+  #titlelayout {
+    grid-area: header;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+  
+  #title{
+    font-family: 'Sail', cursive;
+    font-size: 4em;
+     text-decoration: underline;
+    text-shadow: 
+      2px 0 0 #fff, 
+      -2px 0 0 #fff, 
+      0 2px 0 #fff, 
+      0 -2px 0 #fff, 
+      1px 1px #fff, 
+      -1px -1px 0 #fff, 
+      1px -1px 0 #fff, 
+      -1px 1px 0 #fff;
+    line-height:40px;
+    padding-top:30px;
+  }
+  
+  #subtitle{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size:0.35em; 
+    text-shadow:none;
+  }
+  
+  #img-caption{
+    padding-top:5px;
+    padding-bottom:5px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size:1.2em;
+  }
+  
+  #image {
+    border-radius:25px;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  #img-div {
+    border-radius:25px;
+    min-width: 700px;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    width:auto;
+    height:auto;
+  }
+  
+  #tribute-info{
+    grid-area: content;
+    
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 1em 2em;
+    font-family: 'Big Shoulders Display';
+    font-size:1.1em;
+  }
+  
+  h2 {
+    text-align: center;
+    position:relative;
+  }
+  h2 span {
+  background:#ff359a;
+  z-index:100;
+  position:relative;
+  padding:15px;
+  }
+  h2::after  {
+    content: '';
+    position: absolute;
+    width:100%;
+    height:4px;
+    left:0px;
+    top:50%;
+    background: white;
+    z-index:50;
+  }
+  
+  ul {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1;
+    letter-spacing:0.8px;
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: white;  
+  }
+  
+  li {
+    margin: 13px 0;
+    background:#ff359a;
+    text-align: justify;
+  texto-justify: inter-palabra;
+    background-color: white;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+  }
+  .cita {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: red;
+  }
